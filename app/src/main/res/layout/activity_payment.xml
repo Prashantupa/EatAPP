@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pay"
+    android:alpha="0.7"
+    tools:context=".payment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:weightSum="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Card Details"
+            android:textSize="35sp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Card Holder Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Prashant Upadhyay"
+            android:layout_marginLeft="17dp"
+            android:background="#fff"
+            android:padding="15dp"
+            />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Card Number"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="4560 2740 1485 7895                        VISA"
+            android:inputType="number"
+            android:layout_marginLeft="17dp"
+            android:background="#fff"
+            android:padding="15dp"
+            />
+
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expire date"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:textColor="#000"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:hint="MM"
+                android:layout_marginLeft="17dp"
+                android:background="#fff"
+                android:padding="15dp"
+                />
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:hint="YY"
+                android:layout_marginLeft="17dp"
+                android:background="#fff"
+                android:padding="15dp"
+                />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CCV"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="0dp"
+                android:padding="15dp"
+                android:textColor="#000"/>
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:layout_marginLeft="-150dp"
+
+                android:hint="255"
+
+                android:background="#fff"
+                android:padding="15dp"
+                />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="170dp"
+            android:background="@color/colorAccent"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Cancel"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-250dp"/>
+
+        <Button
+            android:layout_width="170dp"
+            android:background="#fff"
+            android:id="@+id/pay1"
+            android:padding="10dp"
+            android:layout_marginLeft="210dp"
+            android:text="PAY"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dp"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="80dp"
+            android:text="Cash on Door"/>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+
